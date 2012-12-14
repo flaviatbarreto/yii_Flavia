@@ -1,0 +1,808 @@
+2012/12/09 23:13:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "phonebook" was not found.' in C:\wamp\www\yii\framework\web\actions\CViewAction.php:113
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CViewAction.php(124): CViewAction->resolveView('phonebook')
+#1 C:\wamp\www\yii\framework\web\actions\CAction.php(75): CViewAction->run()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CAction->runWithParams(Array)
+#3 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#4 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('page')
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/page')
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/yii_projeto/index.php?r=site/page&view=phonebook
+---
+2012/12/09 23:21:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "phone/login".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phone/login')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_projeto/index.php?r=phone/login
+---
+2012/12/09 23:21:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('login')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/login')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii_projeto/index.php?r=phonebook/login
+---
+2012/12/09 23:24:35 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "phonebook/index".' in C:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('phonebook/index', NULL, true)
+#1 C:\wamp\www\yii_projeto\protected\controllers\SiteController.php(32): CController->render('phonebook/index')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii_projeto/
+---
+2012/12/09 23:24:46 [error] [php] Undefined variable: dataProvider (C:\wamp\www\yii_projeto\protected\views\phonebook\index.php:18)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\yii_projeto\protected\controllers\SiteController.php(32): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_projeto/
+in C:\wamp\www\yii_projeto\protected\views\phonebook\index.php (18)
+in C:\wamp\www\yii_projeto\protected\controllers\SiteController.php (32)
+in C:\wamp\www\yii_projeto\index.php (13)
+2012/12/09 23:24:55 [error] [php] Undefined variable: dataProvider (C:\wamp\www\yii_projeto\protected\views\phonebook\index.php:18)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\yii_projeto\protected\controllers\SiteController.php(32): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_projeto/
+in C:\wamp\www\yii_projeto\protected\views\phonebook\index.php (18)
+in C:\wamp\www\yii_projeto\protected\controllers\SiteController.php (32)
+in C:\wamp\www\yii_projeto\index.php (13)
+2012/12/09 23:24:56 [error] [php] Undefined variable: dataProvider (C:\wamp\www\yii_projeto\protected\views\phonebook\index.php:18)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\yii_projeto\protected\controllers\SiteController.php(32): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_projeto/
+in C:\wamp\www\yii_projeto\protected\views\phonebook\index.php (18)
+in C:\wamp\www\yii_projeto\protected\controllers\SiteController.php (32)
+in C:\wamp\www\yii_projeto\index.php (13)
+2012/12/09 23:24:56 [error] [php] Undefined variable: dataProvider (C:\wamp\www\yii_projeto\protected\views\phonebook\index.php:18)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\yii_projeto\protected\controllers\SiteController.php(32): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_projeto/
+in C:\wamp\www\yii_projeto\protected\views\phonebook\index.php (18)
+in C:\wamp\www\yii_projeto\protected\controllers\SiteController.php (32)
+in C:\wamp\www\yii_projeto\index.php (13)
+2012/12/09 23:24:56 [error] [php] Undefined variable: dataProvider (C:\wamp\www\yii_projeto\protected\views\phonebook\index.php:18)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\yii_projeto\protected\controllers\SiteController.php(32): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_projeto/
+in C:\wamp\www\yii_projeto\protected\views\phonebook\index.php (18)
+in C:\wamp\www\yii_projeto\protected\controllers\SiteController.php (32)
+in C:\wamp\www\yii_projeto\index.php (13)
+2012/12/09 23:24:56 [error] [php] Undefined variable: dataProvider (C:\wamp\www\yii_projeto\protected\views\phonebook\index.php:18)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\yii_projeto\protected\controllers\SiteController.php(32): SiteController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_projeto/
+in C:\wamp\www\yii_projeto\protected\views\phonebook\index.php (18)
+in C:\wamp\www\yii_projeto\protected\controllers\SiteController.php (32)
+in C:\wamp\www\yii_projeto\index.php (13)
+2012/12/09 23:33:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "SiteController/actionLogin".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_projeto/
+---
+2012/12/09 23:34:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "SiteController/actionLogin".' in C:\wamp\www\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii_projeto/
+---
+2012/12/09 23:34:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "actionLogin".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('actionLogin')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('actionLogin')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii_projeto/
+---
+2012/12/09 23:34:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "actionLogin".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('actionLogin')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('actionLogin')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii_projeto/
+---
+2012/12/09 23:34:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "actionLogin".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('actionLogin')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('actionLogin')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yii_projeto/
+---
+2012/12/09 23:45:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\yii_projeto\protected\controllers\PhonebookController.php:155
+Stack trace:
+#0 C:\wamp\www\yii_projeto\protected\controllers\PhonebookController.php(55): PhonebookController->loadModel('Gabriel')
+#1 [internal function]: PhonebookController->actionView('Gabriel')
+#2 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(PhonebookController), Array)
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(PhonebookController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/view')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii_projeto/index.php?r=phonebook/view&id=Gabriel
+HTTP_REFERER=http://localhost/yii_projeto/index.php?r=phonebook/index&view=about
+---
+2012/12/09 23:45:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\yii_projeto\protected\controllers\PhonebookController.php:155
+Stack trace:
+#0 C:\wamp\www\yii_projeto\protected\controllers\PhonebookController.php(55): PhonebookController->loadModel('Gabriel')
+#1 [internal function]: PhonebookController->actionView('Gabriel')
+#2 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(PhonebookController), Array)
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(PhonebookController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/view')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii_projeto/index.php?r=phonebook/view&id=Gabriel
+HTTP_REFERER=http://localhost/yii_projeto/index.php?r=phonebook/index&view=about
+---
+2012/12/09 23:45:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\yii_projeto\protected\controllers\PhonebookController.php:155
+Stack trace:
+#0 C:\wamp\www\yii_projeto\protected\controllers\PhonebookController.php(55): PhonebookController->loadModel('Gabriel')
+#1 [internal function]: PhonebookController->actionView('Gabriel')
+#2 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(PhonebookController), Array)
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(PhonebookController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/view')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii_projeto/index.php?r=phonebook/view&id=Gabriel
+HTTP_REFERER=http://localhost/yii_projeto/index.php?r=phonebook/index&view=about
+---
+2012/12/09 23:46:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\yii_projeto\protected\controllers\PhonebookController.php:155
+Stack trace:
+#0 C:\wamp\www\yii_projeto\protected\controllers\PhonebookController.php(55): PhonebookController->loadModel('Gabriel')
+#1 [internal function]: PhonebookController->actionView('Gabriel')
+#2 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(PhonebookController), Array)
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(PhonebookController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/view')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii_projeto/index.php?r=phonebook/view&id=Gabriel
+HTTP_REFERER=http://localhost/yii_projeto/index.php?r=phonebook/index&view=about
+---
+2012/12/10 00:12:25 [error] [exception.CException] exception 'CException' with message 'Property "Phonebook.nome" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('nome')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('nome')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Phonebook), 'nome')
+#3 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(Phonebook), 'nome', Array)
+#4 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(658): CHtml::activeTextField(Object(Phonebook), 'nome', Array)
+#5 C:\wamp\www\yii_projeto\protected\views\phonebook\_form.php(20): CActiveForm->textField(Object(Phonebook), 'nome', Array)
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\yii...')
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\yii...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\yii...', Array, true)
+#9 C:\wamp\www\yii_projeto\protected\views\phonebook\create.php(18): CController->renderPartial('_form', Array)
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\yii...')
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\yii...', Array, true)
+#12 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\yii...', Array, true)
+#13 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#14 C:\wamp\www\yii_projeto\protected\controllers\PhonebookController.php(79): CController->render('create', Array)
+#15 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): PhonebookController->actionCreate()
+#16 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#23 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#25 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/creat...')
+#26 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/yii_projeto/index.php?r=phonebook/create
+HTTP_REFERER=http://localhost/yii_projeto/index.php?r=site/login
+---
+2012/12/10 00:54:26 [error] [php] preg_match() [<a href='function.preg-match'>function.preg-match</a>]: Delimiter must not be alphanumeric or backslash (C:\wamp\www\yii\framework\validators\CRegularExpressionValidator.php:51)
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModel.php(158): CRegularExpressionValidator->validate()
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(795): Phonebook->validate()
+#2 C:\wamp\www\yii_projeto\protected\controllers\PhonebookController.php(73): Phonebook->save()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): PhonebookController->actionCreate()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): PhonebookController->runAction()
+#6 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): PhonebookController->filterAccessControl()
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(266): PhonebookController->runActionWithFilters()
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(283): PhonebookController->run()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\yii_projeto\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_projeto/index.php?r=phonebook/create
+in C:\wamp\www\yii_projeto\protected\controllers\PhonebookController.php (73)
+in C:\wamp\www\yii_projeto\index.php (13)
+2012/12/14 01:31:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii_projeto\protected\modules\userGroups\components\UserGroupsAccessControl.php:97
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): UserGroupsAccessControl->accessDenied(Object(WebUserGroups), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii_projeto\protected\components\Controller.php(43): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): Controller->filterUserGroupsAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/admin')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_projeto/phonebook/admin
+HTTP_REFERER=http://localhost/yii_projeto/phonebook/create
+---
+2012/12/14 01:32:03 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii_projeto\protected\modules\userGroups\components\UserGroupsAccessControl.php:97
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): UserGroupsAccessControl->accessDenied(Object(WebUserGroups), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii_projeto\protected\components\Controller.php(43): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): Controller->filterUserGroupsAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/admin')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_projeto/phonebook/admin
+HTTP_REFERER=http://localhost/yii_projeto/phonebook/create
+---
+2012/12/14 01:32:27 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii_projeto\protected\modules\userGroups\components\UserGroupsAccessControl.php:97
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): UserGroupsAccessControl->accessDenied(Object(WebUserGroups), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii_projeto\protected\components\Controller.php(43): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): Controller->filterUserGroupsAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/admin')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_projeto/phonebook/admin
+HTTP_REFERER=http://localhost/yii_projeto/phonebook/create
+---
+2012/12/14 01:32:34 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii_projeto\protected\modules\userGroups\components\UserGroupsAccessControl.php:97
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): UserGroupsAccessControl->accessDenied(Object(WebUserGroups), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii_projeto\protected\components\Controller.php(43): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): Controller->filterUserGroupsAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/admin')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_projeto/phonebook/admin
+HTTP_REFERER=http://localhost/yii_projeto/phonebook/create
+---
+2012/12/14 01:32:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii_projeto\protected\modules\userGroups\components\UserGroupsAccessControl.php:97
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): UserGroupsAccessControl->accessDenied(Object(WebUserGroups), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii_projeto\protected\components\Controller.php(43): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): Controller->filterUserGroupsAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/admin')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_projeto/phonebook/admin
+HTTP_REFERER=http://localhost/yii_projeto/phonebook/create
+---
+2012/12/14 01:33:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii_projeto\protected\modules\userGroups\components\UserGroupsAccessControl.php:97
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): UserGroupsAccessControl->accessDenied(Object(WebUserGroups), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii_projeto\protected\components\Controller.php(43): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): Controller->filterUserGroupsAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/admin')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_projeto/phonebook/admin
+HTTP_REFERER=http://localhost/yii_projeto/phonebook/create
+---
+2012/12/14 01:33:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii_projeto\protected\modules\userGroups\components\UserGroupsAccessControl.php:97
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): UserGroupsAccessControl->accessDenied(Object(WebUserGroups), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii_projeto\protected\components\Controller.php(43): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): Controller->filterUserGroupsAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/admin')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_projeto/phonebook/admin
+HTTP_REFERER=http://localhost/yii_projeto/phonebook/admin
+---
+2012/12/14 01:36:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii_projeto\protected\modules\userGroups\components\UserGroupsAccessControl.php:97
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): UserGroupsAccessControl->accessDenied(Object(WebUserGroups), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii_projeto\protected\components\Controller.php(43): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): Controller->filterUserGroupsAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/creat...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_projeto/phonebook/create
+HTTP_REFERER=http://localhost/yii_projeto/phonebook
+---
+2012/12/14 01:36:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii_projeto\protected\modules\userGroups\components\UserGroupsAccessControl.php:97
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): UserGroupsAccessControl->accessDenied(Object(WebUserGroups), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii_projeto\protected\components\Controller.php(43): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): Controller->filterUserGroupsAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/admin')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_projeto/phonebook/admin
+HTTP_REFERER=http://localhost/yii_projeto/phonebook/create
+---
+2012/12/14 01:36:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii_projeto\protected\modules\userGroups\components\UserGroupsAccessControl.php:97
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): UserGroupsAccessControl->accessDenied(Object(WebUserGroups), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii_projeto\protected\components\Controller.php(43): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): Controller->filterUserGroupsAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/creat...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_projeto/phonebook/create
+HTTP_REFERER=http://localhost/yii_projeto/phonebook
+---
+2012/12/14 01:36:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii_projeto\protected\modules\userGroups\components\UserGroupsAccessControl.php:97
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): UserGroupsAccessControl->accessDenied(Object(WebUserGroups), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii_projeto\protected\components\Controller.php(43): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): Controller->filterUserGroupsAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/admin')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_projeto/phonebook/admin
+HTTP_REFERER=http://localhost/yii_projeto/phonebook/create
+---
+2012/12/14 01:36:21 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii_projeto\protected\modules\userGroups\components\UserGroupsAccessControl.php:97
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): UserGroupsAccessControl->accessDenied(Object(WebUserGroups), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii_projeto\protected\components\Controller.php(43): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): Controller->filterUserGroupsAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/creat...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_projeto/phonebook/create
+HTTP_REFERER=http://localhost/yii_projeto/phonebook/admin
+---
+2012/12/14 01:36:23 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii_projeto\protected\modules\userGroups\components\UserGroupsAccessControl.php:97
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): UserGroupsAccessControl->accessDenied(Object(WebUserGroups), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii_projeto\protected\components\Controller.php(43): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): Controller->filterUserGroupsAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/creat...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_projeto/phonebook/create
+HTTP_REFERER=http://localhost/yii_projeto/phonebook/index
+---
+2012/12/14 01:36:24 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii_projeto\protected\modules\userGroups\components\UserGroupsAccessControl.php:97
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): UserGroupsAccessControl->accessDenied(Object(WebUserGroups), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii_projeto\protected\components\Controller.php(43): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): Controller->filterUserGroupsAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/admin')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_projeto/phonebook/admin
+HTTP_REFERER=http://localhost/yii_projeto/phonebook/create
+---
+2012/12/14 01:36:40 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii_projeto\protected\modules\userGroups\components\UserGroupsAccessControl.php:97
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): UserGroupsAccessControl->accessDenied(Object(WebUserGroups), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii_projeto\protected\components\Controller.php(43): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): Controller->filterUserGroupsAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/creat...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_projeto/phonebook/create
+HTTP_REFERER=http://localhost/yii_projeto/phonebook
+---
+2012/12/14 01:36:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii_projeto\protected\modules\userGroups\components\UserGroupsAccessControl.php:97
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): UserGroupsAccessControl->accessDenied(Object(WebUserGroups), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii_projeto\protected\components\Controller.php(43): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): Controller->filterUserGroupsAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/admin')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_projeto/phonebook/admin
+HTTP_REFERER=http://localhost/yii_projeto/phonebook/create
+---
+2012/12/14 01:36:53 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii_projeto\protected\modules\userGroups\components\UserGroupsAccessControl.php:97
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): UserGroupsAccessControl->accessDenied(Object(WebUserGroups), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii_projeto\protected\components\Controller.php(43): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): Controller->filterUserGroupsAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/creat...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_projeto/phonebook/create
+HTTP_REFERER=http://localhost/yii_projeto/phonebook
+---
+2012/12/14 01:36:54 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii_projeto\protected\modules\userGroups\components\UserGroupsAccessControl.php:97
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): UserGroupsAccessControl->accessDenied(Object(WebUserGroups), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii_projeto\protected\components\Controller.php(43): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): Controller->filterUserGroupsAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/admin')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_projeto/phonebook/admin
+HTTP_REFERER=http://localhost/yii_projeto/phonebook/create
+---
+2012/12/14 01:37:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii_projeto\protected\modules\userGroups\components\UserGroupsAccessControl.php:97
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): UserGroupsAccessControl->accessDenied(Object(WebUserGroups), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii_projeto\protected\components\Controller.php(43): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): Controller->filterUserGroupsAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/creat...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_projeto/phonebook/create
+HTTP_REFERER=http://localhost/yii_projeto/phonebook
+---
+2012/12/14 01:37:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii_projeto\protected\modules\userGroups\components\UserGroupsAccessControl.php:97
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(133): UserGroupsAccessControl->accessDenied(Object(WebUserGroups), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii_projeto\protected\components\Controller.php(43): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): Controller->filterUserGroupsAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/admin')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_projeto/phonebook/admin
+HTTP_REFERER=http://localhost/yii_projeto/phonebook/create
+---
+2012/12/14 01:44:36 [error] [php] Use of undefined constant phonebook - assumed 'phonebook' (C:\wamp\www\yii_projeto\protected\controllers\PhonebookController.php:76)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): PhonebookController->runAction()
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\wamp\www\yii_projeto\protected\components\Controller.php(43): UserGroupsAccessControl->filter()
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): PhonebookController->filterUserGroupsAccessControl()
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): PhonebookController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): PhonebookController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_projeto/phonebook/create
+in C:\wamp\www\yii_projeto\protected\controllers\PhonebookController.php (76)
+in C:\wamp\www\yii_projeto\protected\components\Controller.php (43)
+in C:\wamp\www\yii_projeto\index.php (13)
+2012/12/14 01:45:31 [error] [php] Undefined index: phonebook (C:\wamp\www\yii_projeto\protected\controllers\PhonebookController.php:76)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): PhonebookController->runAction()
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\wamp\www\yii_projeto\protected\components\Controller.php(43): UserGroupsAccessControl->filter()
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): PhonebookController->filterUserGroupsAccessControl()
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): PhonebookController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(283): PhonebookController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\yii_projeto\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii_projeto/phonebook/create
+in C:\wamp\www\yii_projeto\protected\controllers\PhonebookController.php (76)
+in C:\wamp\www\yii_projeto\protected\components\Controller.php (43)
+in C:\wamp\www\yii_projeto\index.php (13)
+2012/12/14 01:45:57 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tbl_phonebook" does not have a column named "0".' in C:\wamp\www\yii\framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\yii_projeto\protected\controllers\PhonebookController.php(76): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): PhonebookController->actionCreate()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 C:\wamp\www\yii_projeto\protected\components\Controller.php(43): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): Controller->filterUserGroupsAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/creat...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii_projeto/phonebook/create
+HTTP_REFERER=http://localhost/yii_projeto/phonebook/create
+---
+2012/12/14 01:48:25 [error] [exception.CException] exception 'CException' with message 'Alias "ext.Kint.Kint" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\wamp\www\yii\framework\YiiBase.php:318
+Stack trace:
+#0 C:\wamp\www\yii\framework\YiiBase.php(198): YiiBase::import('ext.Kint.Kint', true)
+#1 C:\wamp\www\yii\framework\base\CModule.php(387): YiiBase::createComponent(Array)
+#2 C:\wamp\www\yii\framework\base\CModule.php(493): CModule->getComponent('kint')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(146): CModule->preloadComponents()
+#4 C:\wamp\www\yii\framework\YiiBase.php(127): CApplication->__construct('C:\wamp\www\yii...')
+#5 C:\wamp\www\yii\framework\YiiBase.php(100): YiiBase::createApplication('CWebApplication', 'C:\wamp\www\yii...')
+#6 C:\wamp\www\yii_projeto\index.php(13): YiiBase::createWebApplication('C:\wamp\www\yii...')
+#7 {main}
+REQUEST_URI=/yii_projeto/gii
+---
+2012/12/14 01:49:51 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tbl_phonebook" does not have a column named "0".' in C:\wamp\www\yii\framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\yii_projeto\protected\controllers\PhonebookController.php(76): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): PhonebookController->actionCreate()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 C:\wamp\www\yii_projeto\protected\components\Controller.php(43): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): Controller->filterUserGroupsAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/creat...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii_projeto/phonebook/create
+HTTP_REFERER=http://localhost/yii_projeto/phonebook/create
+---
+2012/12/14 01:50:27 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tbl_phonebook" does not have a column named "0".' in C:\wamp\www\yii\framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\yii_projeto\protected\controllers\PhonebookController.php(76): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): PhonebookController->actionCreate()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 C:\wamp\www\yii_projeto\protected\components\Controller.php(43): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): Controller->filterUserGroupsAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/creat...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii_projeto/phonebook/create
+HTTP_REFERER=http://localhost/yii_projeto/phonebook/create
+---
+2012/12/14 01:50:50 [error] [exception.CDbException] exception 'CDbException' with message 'Table "tbl_phonebook" does not have a column named "0".' in C:\wamp\www\yii\framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\yii_projeto\protected\controllers\PhonebookController.php(76): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): PhonebookController->actionCreate()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 C:\wamp\www\yii_projeto\protected\components\Controller.php(43): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): Controller->filterUserGroupsAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('phonebook/creat...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\yii_projeto\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii_projeto/phonebook/create
+HTTP_REFERER=http://localhost/yii_projeto/phonebook/create
+---
